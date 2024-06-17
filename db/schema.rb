@@ -8,8 +8,7 @@
 # migrations from scratch. Old migrations may fail to apply correctly if those
 # migrations use external dependencies or application code.
 #
-# It's strongly recommended that you check this file into your version control system.
-
+# It's strongly recommended that you check this file into your version control sy
 ActiveRecord::Schema[7.0].define(version: 2024_06_13_082417) do
   create_table "room_users", charset: "utf8", force: :cascade do |t|
     t.bigint "room_id", null: false
@@ -41,4 +40,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_13_082417) do
 
   add_foreign_key "room_users", "rooms"
   add_foreign_key "room_users", "users"
+
 end
